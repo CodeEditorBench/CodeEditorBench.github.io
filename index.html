@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MMMU</title>
+  <title>CodeEditorBench</title>
     <style>
         .hidden {
             display: none;
@@ -11,10 +11,10 @@
   <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <meta name="description"
-        content="A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI">
-  <meta name="keywords" content="MMMU, LMM, LMM Evaluation, Vision Language Model, Large Language Model, Large Multimodal Model, artificial intelligence, AI, AGI, artificial general intelligence">
+        content="A Framework for Evaluating Code Editing Capability of Large Language Models">
+  <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI</title>
+  <title>CodeEditorBench: A Framework for Evaluating Code Editing Capability of Large Language Models</title>
 
   <link rel="icon" href="./static/images/mmmu_icon2.png">
 
@@ -87,45 +87,29 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
-            <img src="static/images/mmmu_icon2.png" style="width:1em;vertical-align: middle" alt="Logo"/> 
-            <span class="mmmu" style="vertical-align: middle">MMMU</span>
+            <img src="static/images/logo.jpeg" style="width:1em;vertical-align: middle" alt="Logo"/> 
+            <span class="mmmu" style="vertical-align: middle">CodeEditorBench</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
-            A Massive Multi-discipline Multimodal Understanding 
-            <!-- <br> -->
-            and Reasoning Benchmark for Expert AGI
+            A Framework for Evaluating Code Editing Capability of Large Language Models
           </h2>
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block">Xiang Yue*<sup style="color:#6fbf73;">†,1</sup>,</span> -->
-            <span class="author-block">
-              <a href="https://xiangyue9607.github.io/" style="text-decoration: none; color: inherit;">Xiang Yue*<sup style="color:#6fbf73;">†,1</sup></a>,
-            </span>
-            <span class="author-block">
-              <a href="https://yuanshengni.github.io/" style="text-decoration: none; color: inherit;">Yuansheng Ni*<sup style="color:#ffac33;">2</sup></a>
-              ,
-            </span>
-            <!-- <span class="author-block">Yuansheng Ni*<sup style="color:#ffac33;">2</sup>,</span> -->
-            <span class="author-block">
-              <a href="https://drogozhang.github.io/" style="text-decoration: none; color: inherit;">Kai Zhang*<sup style="color:#ed4b82;">3</sup></a>
-              ,
-            </span>
-            <!-- <span class="author-block">Kai Zhang*<sup style="color:#ed4b82;">3</sup>,</span> -->
-            <span class="author-block">Tianyu Zheng*<sup style="color:#007bff;">4</sup>,</span><br>
-            <span class="author-block">Ruoqi Liu<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Ge Zhang<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Samuel Stevens<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Dongfu Jiang<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Weiming Ren<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Yuxuan Sun<sup style="color:#007bff;">4</sup>,</span>
-            <span class="author-block">Cong Wei<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Botao Yu<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Ruibin Yuan<sup style="color:#ffac33;">5</sup>,</span>
-            <span class="author-block">Renliang Sun<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Ming Yin<sup style="color:#9b51e0;">7</sup>,</span>
-            <span class="author-block">Boyuan Zheng<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Zhenzhu Yang<sup style="color:#007bff;">4</sup>,</span>
-            <span class="author-block">Yibo Liu<sup style="color:#ed4b82;">6</sup>,</span>
-            <span class="author-block">Wenhao Huang<sup style="color:#007bff;">4</sup>,</span><br>
+            <span class="author-block">Jiawei Guo*<sup style="color:#007bff;">4</sup>,</span>
+            <span class="author-block">Ziming Li*<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Xueling Liu*<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Kaijing Ma*<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Tianyu Zheng<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Zhouliang Yu<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Ding Pan<sup style="color:#007bff;">4</sup>,</span>
+            <span class="author-block">Yizhi LI<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Ruibo Liu<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Yue Wang<sup style="color:#ffac33;">5</sup>,</span>
+            <span class="author-block">Shuyue Guo<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Xingwei Qu<sup style="color:#9b51e0;">7</sup>,</span>
+            <span class="author-block">Xiang Yue<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Ge Zhang<sup style="color:#007bff;">4</sup>,</span>
+            <span class="author-block">Wenhu Chen<sup style="color:#ed4b82;">6</sup>,</span>
+            <span class="author-block">Jie Fu<sup style="color:#007bff;">4</sup>,</span><br>
             <!-- <span class="author-block">Huan Sun*<sup style="color:#ed4b82;">3</sup>,</span>
             <span class="author-block">Yu Su*<sup style="color:#ed4b82;">†,3</sup>,</span>
             <span class="author-block">Wenhu Chen*<sup style="color:#ffac33;">†,2</sup></span> -->
@@ -271,26 +255,6 @@
     width: 80%;
   }
   </style>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <!-- <div class="hero-body">
-      <img src="static/images/tease_scores.png" alt="Examples from the dataset"/>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div> -->
-      <!-- <div class="box m-5"> -->
-        <div class="content has-text-centered">
-          <img src="static/images/overview_mmlu.Jpeg" alt="geometric reasoning" width="100%"/>
-          <p> Overview of the MMMU dataset. MMMU presents four challenges: 1) <b>comprehensiveness</b>: 11.5K college-level problems across six broad disciplines and 30 college subjects; 
-            2) highly <b>heterogeneous</b> image types; 3) <b>interleaved</b> text and images; 4) <b>expert-level</b> perception and reasoning rooted in deep subject knowledge.</p>
-        </div>
-      <!-- </div> -->
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
@@ -299,17 +263,20 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">🔔News</h2>
         <div class="content has-text-justified">
-          <p>
+          <!-- <p>
             <b>🚀[2024-01-31]: We added Human Expert performance on the <a href="#leaderboard">Leaderboard</a>!🌟</b>
           </p>
           <p>
             <b>🔥[2023-12-04]: Our evaluation server for the test set is now available on <a href="https://eval.ai/web/challenges/challenge-page/2179/overview"><b>EvalAI</b></a>. We welcome all submissions and look forward to your participation! 😆</b>
-          </p>
+          </p> -->
       </div>      
-        <h2 class="title is-3">Introduction</h2>
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce MMMU: a new benchmark designed to evaluate multimodal models on massive multi-discipline tasks demanding college-level subject knowledge and deliberate reasoning. MMMU includes <b>11.5K</b> meticulously collected multimodal questions from college exams, quizzes, and textbooks, covering six core disciplines: Art & Design, Business, Science, Health & Medicine, Humanities & Social Science, and Tech & Engineering. These questions span <b>30</b> subjects and <b>183</b> subfields, comprising 30 highly heterogeneous image types, such as charts, diagrams, maps, tables, music sheets, and chemical structures. Unlike existing benchmarks, MMMU focuses on advanced perception and reasoning with domain-specific knowledge, challenging models to perform tasks akin to those faced by experts. Our evaluation of 14 open-source LMMs and the proprietary GPT-4V(ision) highlights the substantial challenges posed by MMMU. Even the advanced GPT-4V only achieves a 56% accuracy, indicating significant room for improvement. We believe MMMU will stimulate the community to build next-generation multimodal foundation models towards expert artificial general intelligence.
+            Large Language Models (LLMs) for code are rapidly evolving, with code editing emerging as a critical capability. We introduce CodeEditorBench, a pioneering evaluation framework designed to rigorously assess the performance of LLMs in code editing tasks, including debugging, translating, polishing, and requirement switching. Unlike existing benchmarks focusing solely on code generation, CodeEditorBench emphasizes real-world scenarios and practical aspects of software development.
+          </p>
+          <p>
+            We curated diverse coding challenges and scenarios from five sources, covering various programming languages, complexity levels, and editing tasks. Evaluating 17 LLMs revealed that closed-source models, particularly Gemini-Ultra and GPT-4, outperform open-source models in CodeEditorBench, highlighting differences in model performance based on problem type and prompt sensitivity. CodeEditorBench aims to catalyze advancements in LLMs by providing a robust platform for assessing code editing capabilities. We will release all prompts and datasets to enable the community to expand the dataset and benchmark emerging LLMs.
           </p>
         </div>
       </div>
@@ -318,103 +285,100 @@
 </div>
 </section>
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+        <div class="content has-text-centered">
+          <img src="static/images/tech_route.jpg" alt="tech_route" width="100%"/>
+          <!-- <embed src="static/images/tech_route.pdf" type="application/pdf" width="100%" height="100%"> -->
+          <p style="text-align: left;"> 
+            Figure 1: Overview of CodeEditorBench.
+            CodeEditorBench evaluates programming languages by selecting initial data from five sources and filtering based on code length. 
+            It enriches the dataset with Large Language Model-generated test cases, which, along with all code, are verified by an Online Judge System(OJ). 
+            The benchmark is developed for four problem types using specific methodologies, described in Section~ \ref{method}. 
+            Assessment of 17 LLMs involves crafting prompts for zero-shot, three-shot, and chain of thought settings. Outputs are filtered and integrated with templates for compilation. 
+            The OJ's batch judging determines the LLMs' scores, ensuring a rigorous evaluation process.
+          </p>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>    
+
+
 <!-- DATASET SECTION -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
   <h1 class="title is-1 mmmu">
-    <img src="static/images/mmmu_icon2.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-    <span class="mmmu" style="vertical-align: middle">MMMU Benchmark</span>
+    <!-- <img src="static/images/logo.jpeg" style="width:1em;vertical-align: middle" alt="Logo"/> -->
+    <span class="mmmu" style="vertical-align: middle">CodeEditorBench Dataset</span>
   </h1>
   </div>
 </section>
 
-<!-- <section class="section">
-  <div class="container" style="margin-bottom: 2vh;">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified">
-          <p> -->
+
             
 <section class="section">
+
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <!-- <div class="column is-full-width has-text-centered"> -->
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
-          <p>
-            We introduce the Massive Multi-discipline Multimodal Understanding and Reasoning (MMMU) benchmark, a novel benchmark meticulously curated to assess the expert-level multimodal understanding capability of foundation models across a broad scope of tasks. Covering subjects across disciplines, including Art, Business, Health & Medicine, Science, Humanities & Social Science, and Tech & Engineering, and over subfields. The detailed subject coverage and statistics are detailed in the figure. The questions in our benchmark were manually collected by a team of college students (including coauthors) from various disciplines and subjects, drawing from online sources, textbooks, and lecture materials.
+          <p>Figure 2 presents a selection of exemplars from the CodeEditorBench, delineating the spectrum of code editing tasks, including Code Debugging, Code Translating, Code Polishing, and Code Requirement Switching. 
+              Each dataset entry shares similar attributes such as title, difficulty, public and private test inputs and outputs, as well as <code>code_language</code>. 
+              Unique to the Code Debugging tasks is an 'error_type' attribute, denoting the specific issue present in the code. 
+              Translating tasks are distinguished by <code>source_lang</code> and <code>target_lang</code> attributes, indicating the original and target programming languages. 
+              Code Polishling tasks include <code>avg_running_time</code> and <code>avg_memory</code> attributes, quantifying the average execution time and memory usage, respectively. 
+              Finally, Code Requirement Switching tasks feature a distinct set of attributes including <code>public_similar_tests</code>, 
+              <code>public_target_tests</code> and <code>private_target_tests</code> inputs and outputs, which correspond to the initial and target test cases of the coding problem. 
+              And the same is true for <code>similar_title</code> and <code>target_title</code>.       
           </p>
-          <img src="static/images/mmlu_example.Jpeg" alt="algebraic reasoning" class="center">
-          <br>
-          <p>
-             MMMU is designed to measure three essential skills in LMMs: perception, knowledge, and reasoning. Our aim is to evaluate how well these models can not only perceive and understand information across different modalities but also apply reasoning with subject-specific knowledge to derive the solution.
-          </p>
-          <p>
-            Our MMMU benchmark introduces key challenges to multimodal foundation models, as detailed in a figure. Among these, we particularly highlight the challenge stemming from the requirement for both expert-level visual perceptual abilities and deliberate reasoning with subject-specific knowledge. This challenge is vividly illustrated through our tasks, which not only demand the processing of various heterogeneous image types but also necessitate a model's adeptness in using domain-specific knowledge to deeply understand both the text and images and to reason. This goes significantly beyond basic visual perception, calling for an advanced approach that integrates advanced multimodal analysis with domain-specific knowledge.
-          </p>
-
-          
-
         </div>
-    </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <!-- <div class="column is-full-width has-text-centered"> -->
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Comparisons with Existing Benchmarks</h2>
-        <div class="content has-text-justified">
-          <p>
-            To further distinguish the difference between <i>dataset</i> and other existing ones, we elaborate the benchmark details in Figure. 
-            From the <i>breadth</i> perspective, the prior benchmarks are heavily focused on daily knowledge and common sense. 
-            The covered image format is also limited. Our benchmark aims to cover college-level knowledge with 30 image formats including diagrams, 
-            tables, charts, chemical structures, photos, paintings, geometric shapes, music sheets, medical images, etc. 
-            In the <i>depth</i> aspect, the previous benchmarks normally require commonsense knowledge or simple physical or temporal reasoning. 
-            In contrast, our benchmark requires deliberate reasoning with college-level subject knowledge.
-        </p>
         <div class="content has-text-centered">
-          <img src="static/images/compare.Jpeg" alt="algebraic reasoning" class="center">
-          <p> Sampled MMMU examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
+          <img src="static/images/data_sample.jpg" alt="tech_route" width="100%"/>
+          <!-- <embed src="static/images/tech_route.pdf" type="application/pdf" width="100%" height="100%"> -->
+          <p style="text-align: center;"> 
+            Figure 2: Data Samples of CodeEditorBench
+          </p>
         </div>
-          
-          
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Statistics</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/mmmu_subject_distribution.Jpeg" alt="algebraic reasoning" width="95%"/>
-              <p> Sampled MMMU examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
-            </div>
+  <div class="columns is-centered has-text-centered">
+    <!-- <div class="column is-full-width has-text-centered"> -->
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Statistics</h2>
+      <div class="content has-text-justified">
+        <p>
+          We implemented a timestamp-based filtering process to consider the data pollution phenomenon.
+          This process led to a refined dataset called CodeEditorBench_Plus. The original dataset was thereafter designated as CodeEditorBench_Primary.
+          The CodeEditorBench_Primary, 
+          as illustrated in Figure 3, 
+          and CodeEditorBench_Plus, 
+          as shown in Figure 4, establish an evaluation framework that mirrors the complexities inherent in real-world software development scenarios. 
+          This framework is meticulously designed to gauge LLMs' code editing capabilities, thereby presenting a richer and more nuanced set of challenges compared to conventional code generation benchmarks. The datasets are extensive, categorizing tasks along several dimensions: programming languages (C++, Java, Python), 
+          number of errors (one, two, three, four), difficulty levels (easy, medium, hard), language transitions (e.g., C++ to Java), and relation strength (strong, weak).
+        </p>
+
+        <div style="display: flex;">
+          <div style="flex: 1; margin: 5px;">
+            <img src="static/images/four_data_primary.jpg" alt="algebraic reasoning" style="display: block; width: 100%; height: auto;">
+            <p style="text-align: center;"> 
+              Figure 3: Primary Dataset
+            </p>
           </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/table4.Jpeg" alt="arithmetic reasoning" width="40%"/>
-              <p> Key statistics of the MMMU benchmark</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/image_type_count.png" alt="arithmetic reasoning" width="80%"/>
-              <p> Distribution of image types in the MMMU dataset</p>
-            </div>
+          <div style="flex: 1; margin: 5px;">
+            <img src="static/images/four_data_plus.jpg" alt="algebraic reasoning" style="display: block; width: 100%; height: auto;">
+            <p style="text-align: center;"> 
+              Figure 4: Plus Dataset
+            </p>
           </div>
         </div>
+
       </div>
     </div>
-    <!-- <div class="columns is-centered m-6">
-      <div class="column is-max-desktop has-text-centered">
-        <h2 class="title is-3" id="visualization">Visualization</h2>
-        <iframe src="visualizer/explore.html" style="width: 100%;min-height: 100vh; border-radius: 20px;"></iframe>
-      </div>
-    </div> -->
   </div>
 </section>
 
@@ -436,2082 +400,787 @@
         <div class="content">
           <div class="content has-text-justified">
             <p>
-              We evaluate various models including LLMs and LMMs.
-              In each type, we consider both closed- and open-source models.
-              Our evaluation is conducted under a zero-shot setting to assess the capability of models to generate accurate answers without fine-tuning or few-shot demonstrations on our benchmark.
-              For all models, we use the default prompt provided by each model for multi-choice or open QA, if available.
-              If models do not provide prompts for task types in MMMU, we conduct prompt engineering on the validation set and use the most effective prompt for the later zero-shot experiment.
-
             </p>
           </div>
 
-          <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)</button>
+          <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>CodeEditorBench_Plus</b> (Click to Switch)</button>
           <div class="model-labels-container">
-            <!-- <span class="leaderboard-label" style="background-color: #f8fffe;">Open-Source</span>
-            <span class="leaderboard-label" style="background-color: #f9f2f8;">Closed</span> -->
-
-            <span class="leaderboard-label" style="background-color: rgba(255, 208, 80, 0.15);">Human Expert</span>
-            <span class="leaderboard-label" style="background-color: rgba(249, 242, 248, 1);">Open-Source</span>
-            <span class="leaderboard-label" style="background-color: rgba(117, 209, 215, 0.1);">Proprietary</span>
+            <span class="leaderboard-label" style="background-color: rgba(249, 242, 248, 1);">Closed-Source</span>
+            <span class="leaderboard-label" style="background-color: rgba(117, 209, 215, 0.1);">Open-Source</span>
           </div>
 
           <table id="table1" class="js-sort-table">
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td><strong>Model</strong></td>
+              <td><strong>Size</strong></td>
+              <td><strong>Debug</strong></td>
+              <td><strong>Translation</strong></td>
+              <td><strong>Switch</strong></td>
+              <td><strong>Polishment Score</strong></td>
+              <td><strong>Win Rate</strong></td>
+            </tr>
             <tr>
-              <td class="js-sort-number"><strong>Reset</strong></td>
-              <td class="js-sort-number"><strong>Overall</strong></td>
-              <td class="js-sort-number"><strong>Art & Design</strong></td>
-              <td class="js-sort-number"><strong>Business</strong></td>
-              <td class="js-sort-number"><strong>Science</strong></td>
-              <td class="js-sort-number"><strong>Health & Medicine</strong></td>
-              <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
-              <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
-            </tr>
-            <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td style="text-align: left;">
-<!--                <a href="">-->
-                    <b>Human Expert (Best)</b>
-<!--                </a>-->
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
-              <td><b>88.6</b></td>
-              <td><b>89.2</b></td>
-              <td><b>90.7</b></td>
-              <td><b>90.0</b></td>
-              <td><b>87.3</b></td>
-              <td><b>89.2</b></td>
-              <td><b>86.2</b></td>
-            </tr>
-            <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td style="text-align: left;">
-<!--                <a href="">-->
-                    <b>Human Expert (Medium)</b>
-<!--                </a>-->
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
-              <td>82.6</td>
-              <td>84.2</td>
-              <td>86.0</td>
-              <td>84.7</td>
-              <td>78.8</td>
-              <td>85.0</td>
-              <td>79.1</td>
-            </tr>
-            <tr style="background-color: rgba(255, 208, 80, 0.15);">
-              <td style="text-align: left;">
-<!--                <a href="">-->
-                    <b>Human Expert (Worst)</b>
-<!--                </a>-->
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
-              <td>76.2</td>
-              <td>80.8</td>
-              <td>78.0</td>
-              <td>78.0</td>
-              <td>73.3</td>
-              <td>74.2</td>
-              <td>74.3</td>
-            </tr>
-            <!-- <tr style="background-color: #f8fffe;"> -->
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://deepmind.google/technologies/gemini/#introduction">
-                    <b>Gemini Ultra*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
-              <td><b>59.4</b></td>
-              <td style="text-decoration: underline;">70.0</td>
-              <td>56.7</td>
-              <td>48.0</td>
-              <td><b>67.3</b></td>
-              <td><b>78.3</b></td>
-              <td style="text-decoration: underline;">47.1</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://www.anthropic.com/news/claude-3-family">
-                    <b>Claude 3 Opus*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
-              <td><b>59.4</b></td>
-              <td>67.5</td>
-              <td><b>67.2</b></td>
-              <td style="text-decoration: underline;">48.9</td>
-              <td>61.1</td>
-              <td>70.0</td>
-              <td><b>50.6</b></td>
-            </tr>
-            <!-- <tr style="background-color: #f8fffe;"> -->
-              <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://openai.com/contributions/gpt-4v">
-                    <b>GPT-4V(ision) (Playground)</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>GPT-4V(ision) (Playground)</b></td> -->
-              <td style="text-decoration: underline;">56.8</td>
-              <td>65.8</td>
-              <td style="text-decoration: underline;">59.3</td>
-              <td><b>54.7</b></td>
-              <td style="text-decoration: underline;">64.7</td>
-              <td style="text-decoration: underline;">72.5</td>
-              <td>36.7</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://www.anthropic.com/news/claude-3-family">
-                    <b>Claude 3 Sonnet*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
-              <td>53.1</td>
-              <td>61.7</td>
-              <td>58.2</td>
-              <td>37.1</td>
-              <td>57.1</td>
-              <td>68.7</td>
-              <td>45.0</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/HyperGAI">
-                    <b>HPT Pro*</b>
-                 </a>
-              </td>
-              <td>52.0</td>
-              <td>66.7</td>
-              <td>43.3</td>
-              <td>42.7</td>
-              <td>50.7</td>
-              <td style="text-decoration: underline;">72.5</td>
-              <td>43.8</td>
+              <td colspan="8">Zero shot</td>
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://github.com/OpenGVLab/InternVL/">
-                    <b>InternVL-Chat-V1.2*</b>
-                 </a>
-              </td>
-              <td>51.6</td>
-              <td>62.5</td>
-              <td>40.7</td>
-              <td>39.3</td>
-              <td>58.7</td>
-              <td>70.0</td>
-              <td>46.2</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://github.com/QwenLM/Qwen-VL/tree/master">
-                    <b>Qwen-VL-MAX*</b>
-                </a>
-              </td>
-              <td>51.4</td>
-              <td><b>72.5</b></td>
-              <td>43.3</td>
-              <td>40.0</td>
-              <td>58.0</td>
-              <td>69.2</td>
-              <td>38.6</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://reka.ai/reka-flash-an-efficient-and-capable-multimodal-language-model/">
-                    <b>Reka Flash*</b>
-                </a>
-              </td>
-              <td>51.3</td>
-              <td>65.8</td>
-              <td>42.7</td>
-              <td>40.0</td>
-              <td>52.0</td>
-              <td>70.8</td>
-              <td>45.7</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://llava-vl.github.io/blog/2024-01-30-llava-1-6/">
-                    <b>LLaVA-1.6-34B *</b>
-                 </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-PLUS*</b></td> -->
-              <td>51.1</td>
-              <td>67.5</td>
-              <td>46.0</td>
-              <td>39.3</td>
-              <td>52.0</td>
-              <td>67.5</td>
-              <td>43.8</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://www.anthropic.com/news/claude-3-family">
-                    <b>Claude 3 Haiku*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
-              <td>50.2</td>
-              <td>60.8</td>
-              <td>52.5</td>
-              <td>37.1</td>
-              <td>52.3</td>
-              <td>66.0</td>
-              <td>41.5</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://www.adept.ai/blog/adept-fuyu-heavy">
-                    <b>Adept Fuyu-Heavy*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Fuyu-8B</b></td> -->
-              <td>48.3</td>
-              <td>53.4</td>
-              <td>46.3</td>
-              <td>33.7</td>
-              <td>51.3</td>
-              <td>72.2</td>
-              <td>44.0</td>
-           </tr>
-            <!-- <tr style="background-color: #f8fffe;"> -->
-              <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://deepmind.google/technologies/gemini/#introduction">
-                    <b>Gemini Pro*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Pro*</b></td> -->
-              <td>47.9</td>
-              <td><b>-</b></td>
+              <td style="text-align: left;">gemini-ultra</td>
               <td>-</td>
+              <td>0.301</td>
+              <td>0.338</td>
+              <td>0.028</td>
+              <td>4.64%</td>
+              <td>0.779</td>
+            </tr>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">gpt-4-0613</td>
               <td>-</td>
-              <td><b>-</b></td>
-              <td><b>-</b></td>
-              <td><b>-</b></td>
+              <td>0.308</td>
+              <td>0.335</td>
+              <td>0.225</td>
+              <td>0.15%</td>
+              <td>0.779</td>
+            </tr>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">gpt-3.5-turbo-1106</td>
+              <td>-</td>
+              <td>0.284</td>
+              <td>0.385</td>
+              <td>0.169</td>
+              <td>0.09%</td>
+              <td>0.765</td>
+            </tr>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">gemini-pro</td>
+              <td>-</td>
+              <td>0.279</td>
+              <td>0.200</td>
+              <td>0.061</td>
+              <td>5.07%</td>
+              <td>0.750</td>
             </tr>
             <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <!-- <a href=""> -->
-                    <b>Marco-VL-Plus*</b>
-                <!-- </a> -->
-              </td>
-              <td>46.2</td>
-              <td>60.8</td>
-              <td>37.3</td>
-              <td>35.3</td>
-              <td>48.7</td>
-              <td>69.2</td>
-              <td>37.1</td>
+              <td style="text-align: left;">deepseek-coder-33b-instruct</td>
+              <td>33B</td>
+              <td>0.267</td>
+              <td>0.353</td>
+              <td>0.131</td>
+              <td>0.06%</td>
+              <td>0.676</td>
             </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/01-ai/Yi-VL-34B">
-                    <b>Yi-VL-34B*</b>
-                 </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-PLUS*</b></td> -->
-              <td>45.9</td>
-              <td>59.2</td>
-              <td>36.0</td>
-              <td>33.3</td>
-              <td>51.3</td>
-              <td>62.5</td>
-              <td>41.0</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
-              <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://github.com/QwenLM/Qwen-VL?tab=readme-ov-file#qwen-vl-plus">
-                    <b>Qwen-VL-PLUS*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-PLUS*</b></td> -->
-              <td>45.2</td>
-              <td>60.0</td>
-              <td>35.3</td>
-              <td>37.3</td>
-              <td>46.7</td>
-              <td>65.8</td>
-              <td>36.7</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/HyperGAI">
-                    <b>HPT Air*</b>
-                 </a>
-              </td>
-              <td>44.0</td>
-              <td>63.3</td>
-              <td>31.3</td>
-              <td>34.7</td>
-              <td>45.3</td>
-              <td>59.2</td>
-              <td>42.9</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://github.com/InternLM/InternLM-XComposer">
-                    <b>InternLM-XComposer2-VL*</b>
-                 </a>
-              </td>
-              <td>43.0</td>
-              <td>60.0</td>
-              <td>34.0</td>
-              <td>34.7</td>
-              <td>46.0</td>
-              <td>62.5</td>
-              <td>32.4</td>
+            
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">WizardCoder-33B-V1.1</td>
+            <td>33B</td>
+            <td>0.265</td>
+            <td>0.315</td>
+            <td>0.125</td>
+            <td>0.19%</td>
+            <td>0.676</td>
             </tr>
             <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <!-- <a href=""> -->
-                    <b>Marco-VL*</b>
-                <!-- </a> -->
-              </td>
-              <td>41.2</td>
-              <td>57.5</td>
-              <td>30.0</td>
-              <td>28.0</td>
-              <td>45.3</td>
-              <td>65.8</td>
-              <td>32.4</td>
+            <td style="text-align: left;">Magicoder-S-DS-6.7B</td>
+            <td>6.7B</td>
+            <td>0.237</td>
+            <td>0.293</td>
+            <td>0.112</td>
+            <td>0.21%</td>
+            <td>0.647</td>
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/openbmb/OmniLMM-12B">
-                    <b>OmniLMM-12B*</b>
-                 </a>
-              </td>
-              <td>41.1</td>
-              <td>58.3</td>
-              <td>34.0</td>
-              <td>27.3</td>
-              <td>44.0</td>
-              <td>62.5</td>
-              <td>31.9</td>
+            <td style="text-align: left;">glm-4</td>
+            <td>-</td>
+            <td>0.204</td>
+            <td>0.142</td>
+            <td>0.055</td>
+            <td>4.25%</td>
+            <td>0.559</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">Magicoder-S-CL-7B</td>
+            <td>7B</td>
+            <td>0.171</td>
+            <td>0.212</td>
+            <td>0.031</td>
+            <td>0.58%</td>
+            <td>0.522</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-13b-Instruct-hf</td>
+            <td>13B</td>
+            <td>0.171</td>
+            <td>0.225</td>
+            <td>0.015</td>
+            <td>1.22%</td>
+            <td>0.493</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">Phind-CodeLlama-34B-v2</td>
+            <td>34B</td>
+            <td>0.221</td>
+            <td>0.111</td>
+            <td>0.059</td>
+            <td>0.51%</td>
+            <td>0.471</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">WizardCoder-15B-V1.0</td>
+            <td>15B</td>
+            <td>0.159</td>
+            <td>0.116</td>
+            <td>0.056</td>
+            <td>0.53%</td>
+            <td>0.412</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-34b-Instruct-hf</td>
+            <td>34B</td>
+            <td>0.126</td>
+            <td>0.180</td>
+            <td>0.021</td>
+            <td>0.66%</td>
+            <td>0.375</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">octocoder</td>
+            <td>15.5B</td>
+            <td>0.041</td>
+            <td>0.337</td>
+            <td>0.023</td>
+            <td>0.07%</td>
+            <td>0.338</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeFuse-CodeLlama-34B</td>
+            <td>34B</td>
+            <td>0.162</td>
+            <td>0.143</td>
+            <td>0.021</td>
+            <td>0.19%</td>
+            <td>0.331</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-34b-hf</td>
+            <td>34B</td>
+            <td>0.158</td>
+            <td>0.141</td>
+            <td>0.041</td>
+            <td>0.15%</td>
+            <td>0.309</td>
+            </tr>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-7b-Instruct-hf</td>
+            <td class="s7">7B</td>
+            <td class="s0">0.154</td>
+            <td class="s0">0.117</td>
+            <td class="s0">0.014</td>
+            <td class="s0">0.05%</td>
+            <td class="s0">0.118</td>
+            </tr>
+            <tr>
+            <td colspan="7">Three Shot</td>
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/Infi-MM/infimm-zephyr">
-                    <b>InfiMM-Zephyr-7B*</b>
-                 </a>
-              </td>
-              <td>39.4</td>
-              <td>55.8</td>
-              <td>28.0</td>
-              <td>33.3</td>
-              <td>42.7</td>
-              <td>59.2</td>
-              <td>29.0</td>
+            <td style="text-align: left;">gemini-ultra</td>
+            <td>-</td>
+            <td>0.283</td>
+            <td>0.406</td>
+            <td>0.131</td>
+            <td>4.83%</td>
+            <td>0.897</td>
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/01-ai/Yi-VL-6B">
-                    <b>Yi-VL-6B*</b>
-                 </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-PLUS*</b></td> -->
-              <td>39.1</td>
-              <td>52.5</td>
-              <td>30.7</td>
-              <td>31.3</td>
-              <td>38.0</td>
-              <td>53.3</td>
-              <td>35.7</td>
+            <td style="text-align: left;">gpt-4-0613</td>
+            <td>-</td>
+            <td>0.336</td>
+            <td>0.453</td>
+            <td>0.275</td>
+            <td>0.22%</td>
+            <td>0.868</td>
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://github.com/OpenGVLab/InternVL/">
-                    <b>InternVL-Chat-V1.1*</b>
-                 </a>
-              </td>
-              <td>39.1</td>
-              <td>56.7</td>
-              <td>34.7</td>
-              <td>31.3</td>
-              <td>39.3</td>
-              <td>57.5</td>
-              <td>27.1</td>
-            </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://github.com/BAAI-DCAI/Bunny">
-                    <b>Bunny-3B*</b>
-                </a>
-              </td>
-              <td>38.2</td>
-              <td>49.2</td>
-              <td>30.7</td>
-              <td>30.7</td>
-              <td>40.7</td>
-              <td>45.0</td>
-              <td>37.1</td>
+            <td style="text-align: left;">deepseek-coder-33b-instruct</td>
+            <td>33B</td>
+            <td>0.264</td>
+            <td>0.353</td>
+            <td>0.209</td>
+            <td>0.23%</td>
+            <td>0.779</td>
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2307.04087">
-                    <b>SVIT*</b>
-                </a>
-              </td>
-              <td>38.0</td>
-              <td>52.5</td>
-              <td>27.3</td>
-              <td>28.0</td>
-              <td>42.0</td>
-              <td>51.7</td>
-              <td>33.8</td>
-            </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://huggingface.co/openbmb/MiniCPM-V">
-                    <b>MiniCPM-V*</b>
-                </a>
-              </td>
-              <td>37.2</td>
-              <td>55.8</td>
-              <td>33.3</td>
-              <td>28.0</td>
-              <td>32.7</td>
-              <td>58.3</td>
-              <td>27.1</td>
-            </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://llava-vl.github.io/">
-                    <b>LLaVA-1.5-13B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>LLaVA-1.5-13B</b></td> -->
-              <td>36.4</td>
-              <td>51.7</td>
-              <td>22.7</td>
-              <td>29.3</td>
-              <td>38.7</td>
-              <td>53.3</td>
-              <td>31.4</td>
+            <td style="text-align: left;">gemini-pro</td>
+            <td>-</td>
+            <td>0.227</td>
+            <td>0.319</td>
+            <td>0.126</td>
+            <td>4.56%</td>
+            <td>0.750</td>
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2312.13286">
-                    <b>Emu2-Chat*</b>
-                </a>
-              </td>
-              <td>36.3</td>
-              <td>55.0</td>
-              <td>30.0</td>
-              <td>28.7</td>
-              <td>28.7</td>
-              <td>46.7</td>
-              <td>35.2</td>
+            <td style="text-align: left;">gpt-3.5-turbo-1106</td>
+            <td>-</td>
+            <td>0.261</td>
+            <td>0.317</td>
+            <td>0.187</td>
+            <td>0.05%</td>
+            <td>0.647</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2308.12966">
-                    <b>Qwen-VL-7B-Chat</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-7B</b></td> -->
-              <td>35.9</td>
-              <td>51.7</td>
-              <td>29.3</td>
-              <td>29.3</td>
-              <td>33.3</td>
-              <td>45.0</td>
-              <td>32.9</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">WizardCoder-33B-V1.1</td>
+            <td>33B</td>
+            <td>0.273</td>
+            <td>0.231</td>
+            <td>0.225</td>
+            <td>0.04%</td>
+            <td>0.647</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2305.06500">
-                    <b>InstructBLIP-T5-XXL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>InstructBLIP-T5-XXL</b></td> -->
-              <td>35.7</td>
-              <td>44.2</td>
-              <td>24.0</td>
-              <td>30.7</td>
-              <td>35.3</td>
-              <td>49.2</td>
-              <td>35.2</td>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+            <td style="text-align: left;">glm-4</td>
+            <td>-</td>
+            <td>0.206</td>
+            <td>0.179</td>
+            <td>0.081</td>
+            <td>4.35%</td>
+            <td>0.529</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2301.12597">
-                    <b>BLIP-2 FLAN-T5-XXL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XXL</b></td> -->
-              <td>35.4</td>
-              <td>41.7</td>
-              <td>30.0</td>
-              <td>34.7</td>
-              <td>32.0</td>
-              <td>50.8</td>
-              <td>30.0</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">Magicoder-S-DS-6.7B</td>
+            <td>6.7B</td>
+            <td>0.258</td>
+            <td>0.219</td>
+            <td>0.177</td>
+            <td>0.04%</td>
+            <td>0.515</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2301.12597">
-                    <b>BLIP-2 FLAN-T5-XL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XL</b></td> -->
-              <td>34.4</td>
-              <td>44.2</td>
-              <td>26.7</td>
-              <td>30.7</td>
-              <td>35.3</td>
-              <td>50.0</td>
-              <td>27.6</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeFuse-CodeLlama-34B</td>
+            <td>34B</td>
+            <td>0.160</td>
+            <td>0.221</td>
+            <td>0.046</td>
+            <td>0.70%</td>
+            <td>0.500</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2305.06500">
-                    <b>InstructBLIP-T5-XL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>InstructBLIP-T5-XL</b></td> -->
-              <td>32.9</td>
-              <td>40.0</td>
-              <td>28.0</td>
-              <td>32.7</td>
-              <td>28.7</td>
-              <td>47.5</td>
-              <td>27.1</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">Phind-CodeLlama-34B-v2</td>
+            <td>34B</td>
+            <td>0.231</td>
+            <td>0.137</td>
+            <td>0.086</td>
+            <td>0.37%</td>
+            <td>0.500</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2311.07575">
-                    <b>SPHINX*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>SPHINX*</b></td> -->
-              <td>32.9</td>
-              <td>48.3</td>
-              <td>24.7</td>
-              <td>26.7</td>
-              <td>30.7</td>
-              <td>50.0</td>
-              <td>26.2</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-34b-hf</td>
+            <td>34B</td>
+            <td>0.131</td>
+            <td>0.250</td>
+            <td>0.102</td>
+            <td>0.08%</td>
+            <td>0.441</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2311.04257">
-                    <b>mPLUG-OWL2*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>mPLUG-OWL2*</b></td> -->
-              <td>32.7</td>
-              <td>45.8</td>
-              <td>24.7</td>
-              <td>22.7</td>
-              <td>32.0</td>
-              <td>45.8</td>
-              <td>31.0</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-13b-Instruct-hf</td>
+            <td>13B</td>
+            <td>0.157</td>
+            <td>0.178</td>
+            <td>0.023</td>
+            <td>0.51%</td>
+            <td>0.368</td>
             </tr>
-            <!-- <tr style="background-color: #f8fffe;"> -->
-              <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://deepmind.google/technologies/gemini/#introduction">
-                    <b>Gemini Nano2*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Nano2*</b></td> -->
-              <td>32.6</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td></td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-34b-Instruct-hf</td>
+            <td>34B</td>
+            <td>0.142</td>
+            <td>0.199</td>
+            <td>0.024</td>
+            <td>0.32%</td>
+            <td>0.368</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2305.03726">
-                    <b>Otter</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Otter</b></td> -->
-              <td>32.2</td>
-              <td>37.5</td>
-              <td>24.0</td>
-              <td>34.7</td>
-              <td>30.7</td>
-              <td>41.7</td>
-              <td>29.0</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">octocoder</td>
+            <td>15.5B</td>
+            <td>0.049</td>
+            <td>0.262</td>
+            <td>0.050</td>
+            <td>0.05%</td>
+            <td>0.338</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2311.03079">
-                    <b>CogVLM</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>CogVLM</b></td> -->
-              <td>32.1</td>
-              <td>40.8</td>
-              <td>25.3</td>
-              <td>28.0</td>
-              <td>32.0</td>
-              <td>45.0</td>
-              <td>27.6</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">CodeLlama-7b-Instruct-hf</td>
+            <td>7B</td>
+            <td>0.165</td>
+            <td>0.094</td>
+            <td>0.023</td>
+            <td>0.28%</td>
+            <td>0.294</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2304.15010">
-                    <b>LLaMA-Adapter2-7B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>LLaMA-Adapter2-7B</b></td> -->
-              <td>29.8</td>
-              <td>29.2</td>
-              <td>25.3</td>
-              <td>30.7</td>
-              <td>30.7</td>
-              <td>33.3</td>
-              <td>30.0</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">WizardCoder-15B-V1.0</td>
+            <td>15B</td>
+            <td>0.113</td>
+            <td>0.123</td>
+            <td>0.094</td>
+            <td>0.11%</td>
+            <td>0.294</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2308.01390">
-                    <b>OpenFlamingo2-9B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>OpenFlamingo2-9B</b></td> -->
-              <td>28.7</td>
-              <td>40.0</td>
-              <td>28.0</td>
-              <td>23.3</td>
-              <td>27.3</td>
-              <td>30.8</td>
-              <td>26.2</td>
+            <tr style="background-color: rgba(117, 209, 215, 0.1);">
+            <td style="text-align: left;">Magicoder-S-CL-7B</td>
+            <td class="s7">7B</td>
+            <td class="s0">0.154</td>
+            <td class="s0">0.198</td>
+            <td class="s0">0.072</td>
+            <td class="s0">0.01%</td>
+            <td class="s0">0.265</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://www.adept.ai/blog/fuyu-8b">
-                    <b>Adept Fuyu-8B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Fuyu-8B</b></td> -->
-              <td>27.9</td>
-              <td>36.7</td>
-              <td>32.0</td>
-              <td>22.0</td>
-              <td>28.0</td>
-              <td>32.5</td>
-              <td>21.4</td>
-           </tr>
-           <tr style="background-color: #f9f2f8;">
-            <td style="text-align: left;">
-              <a href="https://minigpt-4.github.io/">
-                  <b>MiniGPT4-Vicuna-13B</b>
-              </a>
-            </td>
-              <!-- <td style="text-align: left;"><b>MiniGPT4-Vicuna-13B</b></td> -->
-              <td>26.8</td>
-              <td>29.2</td>
-              <td>21.3</td>
-              <td>28.7</td>
-              <td>30.7</td>
-              <td>29.2</td>
-              <td>23.8</td>
+            <tr>
+            <td colspan="7">COT</td>
             </tr>
-            <tr style="background-color: #f4f9fe;">
-              <td style="color: #808080;text-align: left;">Frequent Choice</td>
-              <td style="color: #808080;">26.8</td>
-              <td style="color: #808080;">23.3</td>
-              <td style="color: #808080;">29.3</td>
-              <td style="color: #808080;">27.3</td>
-              <td style="color: #808080;">30.0</td>
-              <td style="color: #808080;">25.8</td>
-              <td style="color: #808080;">24.8</td>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+            <td style="text-align: left;">gpt-4-0613</td>
+            <td>-</td>
+            <td>0.280</td>
+            <td>0.338</td>
+            <td>0.174</td>
+            <td>0.33%</td>
+            <td>0.850</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2306.14824">
-                    <b>Kosmos2</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Kosmos2</b></td> -->
-              <td>24.4</td>
-              <td>25.0</td>
-              <td>18.0</td>
-              <td>19.3</td>
-              <td>28.0</td>
-              <td>30.0</td>
-              <td>26.7</td>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+            <td style="text-align: left;">glm-4</td>
+            <td>-</td>
+            <td>0.228</td>
+            <td>0.218</td>
+            <td>0.072</td>
+            <td>4.09%</td>
+            <td>0.750</td>
             </tr>
-            <tr style="background-color: #f4f9fe;">
-              <td style="color: #808080;text-align: left;">Random Choice</td>
-              <td style="color: #808080;">22.1</td>
-              <td style="color: #808080;">29.2</td>
-              <td style="color: #808080;">24.7</td>
-              <td style="color: #808080;">18.0</td>
-              <td style="color: #808080;">20.7</td>
-              <td style="color: #808080;">20.0</td>
-              <td style="color: #808080;">21.4</td>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+            <td style="text-align: left;">gpt-3.5-turbo-1106</td>
+            <td>-</td>
+            <td>0.265</td>
+            <td>0.113</td>
+            <td>0.142</td>
+            <td>0.28%</td>
+            <td>0.500</td>
             </tr>
-
-            <!-- <tr>
-              <td colspan="8" style="font-size: 18px;"><b>Large Language Models (LLMs): Only Text as Input</b></td>
-            </tr>               -->
-            <!-- <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>Llama2 7B</b></td>
-              <td>30.1</td>
-              <td>29.2</td>
-              <td>22.7</td>
-              <td>34.0</td>
-              <td>26.7</td>
-              <td>37.5</td>
-              <td>31.4</td>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+            <td style="text-align: left;">gemini-ultra</td>
+            <td>-</td>
+            <td>0.213</td>
+            <td>0.162</td>
+            <td>0.062</td>
+            <td>2.12%</td>
+            <td>0.500</td>
             </tr>
-
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL</b></td>
-              <td>32.1</td>
-              <td>38.3</td>
-              <td>28.0</td>
-              <td>28.0</td>
-              <td>32.0</td>
-              <td>42.5</td>
-              <td>28.6</td>
-            </tr>
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL + OCR</b></td>
-              <td>34.7</td>
-              <td>37.5</td>
-              <td>29.3</td>
-              <td>30.0</td>
-              <td><b>32.7</b></td>
-              <td><b>55.0</b></td>
-              <td><b>30.0</b></td>
-            </tr>
-
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL + LLaVA Caption</b></td>
-              <td><b>34.8</b></td>
-              <td><b>43.3</b></td>
-              <td><b>31.3</b></td>
-              <td><b>32.7</b></td>
-              <td>32.0</td>
-              <td>49.2</td>
-              <td>27.6</td>
-            </tr>
-
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B</b></td>
-              <td>33.3</td>
-              <td><b>41.7</b></td>
-              <td>26.7</td>
-              <td>23.3</td>
-              <td>31.3</td>
-              <td>45.8</td>
-              <td><b>34.8</b></td>
-            </tr>
-
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B + OCR</b></td>
-              <td><b>35.4</b></td>
-              <td>39.2</td>
-              <td><b>31.3</b></td>
-              <td><b>30.0</b></td>
-              <td>31.3</td>
-              <td><b>50.0</b></td>
-              <td><b>34.8</b></td>
-            </tr>
-
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B + LLaVA Caption</b></td>
-              <td>33.9</td>
-              <td>38.3</td>
-              <td>26.0</td>
-              <td>28.7</td>
-              <td><b>34.0</b></td>
-              <td>48.3</td>
-              <td>32.4</td>
-            </tr> -->
-
-
-            <!-- <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>GPT-4 Text</b></td>
-              <td>34.9</td>
-              <td>35.0</td>
-              <td>36.7</td>
-              <td>34.7</td>
-              <td>40.7</td>
-              <td>51.7</td>
-              <td>20.0</td>
-            </tr>           -->
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+            <td style="text-align: left;">gemini-pro</td>
+            <td>-</td>
+            <td>0.199</td>
+            <td>0.154</td>
+            <td>0.047</td>
+            <td>3.41%</td>
+            <td>0.400</td>
+            </tr>  
           </table>
 
           <table id="table2" class="js-sort-table hidden">
             <tr>
-              <td class="js-sort-number"><strong>Reset</strong></td>
-              <td class="js-sort-number"><strong>Overall</strong></td>
-              <td class="js-sort-number"><strong>Art & Design</strong></td>
-              <td class="js-sort-number"><strong>Business</strong></td>
-              <td class="js-sort-number"><strong>Science</strong></td>
-              <td class="js-sort-number"><strong>Health & Medicine</strong></td>
-              <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
-              <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
+              <td><strong>Model</strong></td>
+              <td><strong>Size</strong></td>
+              <td><strong>Debug</strong></td>
+              <td><strong>Translation</strong></td>
+              <td><strong>Switch</strong></td>
+              <td><strong>Polishment Score</strong></td>
+              <td><strong>Win Rate</strong></td>
             </tr>
-            <!-- <tr style="background-color: #f8fffe;"> -->
+            <tr>
+              <td colspan="7">Zero shot</td>
+            </tr>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">gpt-4-0613</td>
+              <td>-</td>
+              <td>0.489</td>
+              <td>0.449</td>
+              <td>0.225</td>
+              <td>0.87%</td>
+              <td>0.882</td>
+              </tr>
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">gpt-3.5-turbo-1106</td>
+              <td>-</td>
+              <td>0.491</td>
+              <td>0.443</td>
+              <td>0.169</td>
+              <td>0.84%</td>
+              <td>0.853</td>
+              </tr>
+              <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">gemini-pro</td>
+              <td>-</td>
+              <td>0.420</td>
+              <td>0.285</td>
+              <td>0.061</td>
+              <td>6.27%</td>
+              <td>0.765</td>
+              </tr>
               <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://openai.com/contributions/gpt-4v">
-                    <b>GPT-4V(ision) (Playground)</b>
-                </a>
-              </td>
-              <td><b>55.7</b></td>
-              <td><b>65.3</b></td>
-              <td><b>64.3</b></td>
-              <td><b>48.4</b></td>
-              <td><b>63.5</b></td>
-              <td><b>76.3</b></td>
-              <td><b>41.7</b></td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://github.com/QwenLM/Qwen-VL/tree/master">
-                    <b>Qwen-VL-MAX*</b>
-                </a>
-              </td>
-              <td style="text-decoration: underline;">46.8</td>
-              <td style="text-decoration: underline;">64.2</td>
-              <td>39.8</td>
-              <td>36.3</td>
-              <td style="text-decoration: underline;">52.5</td>
-              <td>70.4</td>
-              <td>40.7</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://github.com/OpenGVLab/InternVL/">
-                    <b>InternVL-Chat-V1.2*</b>
-                 </a>
-              </td>
-              <td>46.2</td>
-              <td>62.5</td>
-              <td>37.6</td>
-              <td>37.9</td>
-              <td>49.7</td>
-              <td>70.1</td>
-              <td style="text-decoration: underline;">40.8</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://llava-vl.github.io/blog/2024-01-30-llava-1-6/">
-                    <b>LLaVA-1.6-34B *</b>
-                 </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-PLUS*</b></td> -->
-              <td>44.7</td>
-              <td>58.6</td>
-              <td style="text-decoration: underline;">39.9</td>
-              <td>36.0</td>
-              <td>51.2</td>
-              <td>70.2</td>
-              <td>36.3</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <!-- <a href=""> -->
-                    <b>Marco-VL-Plus*</b>
-                <!-- </a> -->
-              </td>
-              <td>44.3</td>
-              <td>57.4</td>
-              <td>34.7</td>
-              <td style="text-decoration: underline;">38.5</td>
-              <td>48.7</td>
-              <td style="text-decoration: underline;">72.2</td>
-              <td>36.7</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/01-ai/Yi-VL-34B">
-                    <b>Yi-VL-34B*</b>
-                 </a>
-              </td>
-              <td>41.6</td>
-              <td>56.1</td>
-              <td>33.3</td>
-              <td>32.9</td>
-              <td>45.9</td>
-              <td>66.5</td>
-              <td>36.0</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <a href="https://github.com/QwenLM/Qwen-VL?tab=readme-ov-file#qwen-vl-plus">
-                    <b>Qwen-VL-PLUS*</b>
-                </a>
-              </td>
-              <td>40.8</td>
-              <td>59.9</td>
-              <td>34.5</td>
-              <td>32.8</td>
-              <td>43.7</td>
-              <td>65.5</td>
-              <td>32.9</td>
-            </tr>
-            <tr style="background-color: rgba(117, 209, 215, 0.1);">
-              <td style="text-align: left;">
-                <!-- <a href=""> -->
-                    <b>Marco-VL*</b>
-                <!-- </a> -->
-              </td>
-              <td>40.4</td>
-              <td>56.5</td>
-              <td>31.0</td>
-              <td>31.0</td>
-              <td>46.9</td>
-              <td>66.5</td>
-              <td>33.8</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://github.com/InternLM/InternLM-XComposer">
-                    <b>InternLM-XComposer2-VL*</b>
-                 </a>
-              </td>
-              <td>38.2</td>
-              <td>56.8</td>
-              <td>32.8</td>
-              <td>30.1</td>
-              <td>39.8</td>
-              <td>60.7</td>
-              <td>31.8</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/01-ai/Yi-VL-6B">
-                    <b>Yi-VL-6B*</b>
-                 </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-PLUS*</b></td> -->
-              <td>37.8</td>
-              <td>53.4</td>
-              <td>30.3</td>
-              <td>30.0</td>
-              <td>39.3</td>
-              <td>58.5</td>
-              <td>34.1</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://huggingface.co/Infi-MM/infimm-zephyr">
-                    <b>InfiMM-Zephyr-7B*</b>
-                 </a>
-              </td>
-              <td>35.5</td>
-              <td>50.0</td>
-              <td>29.6</td>
-              <td>28.2</td>
-              <td>37.5</td>
-              <td>54.6</td>
-              <td>31.1</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                 <a href="https://github.com/OpenGVLab/InternVL/">
-                    <b>InternVL-Chat-V1.1*</b>
-                 </a>
-              </td>
-              <td>35.3</td>
-              <td>53.7</td>
-              <td>31.7</td>
-              <td>28.2</td>
-              <td>36.5</td>
-              <td>56.4</td>
-              <td>28.0</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2307.04087">
-                    <b>SVIT*</b>
-                </a>
-              </td>
-              <td>34.1</td>
-              <td>48.9</td>
-              <td>28.0</td>
-              <td>26.8</td>
-              <td>35.5</td>
-              <td>50.9</td>
-              <td>30.7</td>
-            </tr>
-            <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2312.13286">
-                    <b>Emu2-Chat*</b>
-                </a>
-              </td>
-              <td>34.1</td>
-              <td>50.6</td>
-              <td>27.7</td>
-              <td>28.0</td>
-              <td>32.4</td>
-              <td>50.3</td>
-              <td>31.3</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">Magicoder-S-DS-6.7B</td>
+              <td>6.7B</td>
+              <td>0.403</td>
+              <td>0.381</td>
+              <td>0.112</td>
+              <td>1.99%</td>
+              <td>0.735</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">deepseek-coder-33b-instruct</td>
+              <td>33B</td>
+              <td>0.483</td>
+              <td>0.4274</td>
+              <td>0.131</td>
+              <td>0.64%</td>
+              <td>0.728</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">WizardCoder-33B-V1.1</td>
+              <td>33B</td>
+              <td>0.483</td>
+              <td>0.415</td>
+              <td>0.125</td>
+              <td>0.62%</td>
+              <td>0.669</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2301.12597">
-                    <b>BLIP-2 FLAN-T5-XXL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XXL</b></td> -->
-              <td>34.0</td>
-              <td>49.2</td>
-              <td>28.6</td>
-              <td>27.3</td>
-              <td>33.7</td>
-              <td>51.5</td>
-              <td>30.4</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gemini-ultra</td>
+              <td>-</td>
+              <td>0.457</td>
+              <td>0.261</td>
+              <td>0.028</td>
+              <td>3.45%</td>
+              <td>0.632</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2305.06500">
-                    <b>InstructBLIP-T5-XXL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>InstructBLIP-T5-XXL</b></td> -->
-              <td>33.8</td>
-              <td>48.5</td>
-              <td>30.6</td>
-              <td>27.6</td>
-              <td>33.6</td>
-              <td>49.8</td>
-              <td>29.4</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">glm-4</td>
+              <td>-</td>
+              <td>0.263</td>
+              <td>0.309</td>
+              <td>0.055</td>
+              <td>6.02%</td>
+              <td>0.603</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">Phind-CodeLlama-34B-v2</td>
+              <td>34B</td>
+              <td>0.364</td>
+              <td>0.262</td>
+              <td>0.059</td>
+              <td>0.66%</td>
+              <td>0.529</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">Magicoder-S-CL-7B</td>
+              <td>7B</td>
+              <td>0.315</td>
+              <td>0.251</td>
+              <td>0.031</td>
+              <td>0.96%</td>
+              <td>0.456</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-13b-Instruct-hf</td>
+              <td>13B</td>
+              <td>0.365</td>
+              <td>0.231</td>
+              <td>0.015</td>
+              <td>1.30%</td>
+              <td>0.441</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">WizardCoder-15B-V1.0</td>
+              <td>15B</td>
+              <td>0.354</td>
+              <td>0.199</td>
+              <td>0.056</td>
+              <td>0.78%</td>
+              <td>0.441</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">octocoder</td>
+              <td>15.5B</td>
+              <td>0.145</td>
+              <td>0.200</td>
+              <td>0.023</td>
+              <td>2.06%</td>
+              <td>0.368</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-34b-hf</td>
+              <td>34B</td>
+              <td>0.3256423702</td>
+              <td>0.2323832146</td>
+              <td>0.04135079256</td>
+              <td>0.35%</td>
+              <td>0.3235294118</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-34b-Instruct-hf</td>
+              <td>34B</td>
+              <td>0.2475091767</td>
+              <td>0.1955661124</td>
+              <td>0.02136457615</td>
+              <td>0.66%</td>
+              <td>0.2426470588</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-7b-Instruct-hf</td>
+              <td>7B</td>
+              <td>0.336</td>
+              <td>0.160</td>
+              <td>0.014</td>
+              <td>0.48%</td>
+              <td>0.176</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeFuse-CodeLlama-34B</td>
+              <td class="s0">34B</td>
+              <td class="s7">0.221</td>
+              <td class="s7">0.146</td>
+              <td class="s7">0.021</td>
+              <td class="s7">0.63%</td>
+              <td class="s7">0.154</td>
+              </tr>
+              <tr>
+              <td class="s0" colspan="7">Three Shot</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://llava-vl.github.io/">
-                    <b>LLaVA-1.5-13B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>LLaVA-1.5-13B</b></td> -->
-              <td>33.6</td>
-              <td>49.8</td>
-              <td>28.2</td>
-              <td>25.9</td>
-              <td>34.9</td>
-              <td>54.7</td>
-              <td>28.3</td>
-            </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;">
-                <a href="https://github.com/BAAI-DCAI/Bunny">
-                    <b>Bunny-3B*</b>
-                </a>
-              </td>
-              <td>33.0</td>
-              <td>44.3</td>
-              <td>29.5</td>
-              <td>26.8</td>
-              <td>34.5</td>
-              <td>50.5</td>
-              <td>28.7</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
-              <tr style="background-color: rgba(249,242,248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2308.12966">
-                    <b>Qwen-VL-7B-Chat</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Qwen-VL-7B</b></td> -->
-              <td>32.9</td>
-              <td>47.7</td>
-              <td>29.8</td>
-              <td>25.6</td>
-              <td>33.6</td>
-              <td>45.3</td>
-              <td>30.2</td>
-            </tr>
-            <tr style="background-color: rgba(249,242,248, 1);">
-            <td style="text-align: left;">
-              <a href="https://arxiv.org/abs/2311.07575">
-                <b>SPHINX*</b>
-              </a>
-            </td>
-            <!-- <td style="text-align: left;"><b>Qwen-VL-7B</b></td> -->
-            <td>32.9</td>
-            <td>50.9</td>
-            <td>27.2</td>
-            <td>25.3</td>
-            <td>34.1</td>
-            <td>51.2</td>
-            <td>27.8</td>
-          </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gpt-4-0613</td>
+              <td>-</td>
+              <td>0.519</td>
+              <td>0.488</td>
+              <td>0.275</td>
+              <td>0.70%</td>
+              <td>0.926</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2311.04257">
-                    <b>mPLUG-OWL2*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>mPLUG-OWL2*</b></td> -->
-              <td>32.1</td>
-              <td>48.5</td>
-              <td>25.6</td>
-              <td>24.9</td>
-              <td>32.8</td>
-              <td>46.7</td>
-              <td>29.6</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gpt-3.5-turbo-1106</td>
+              <td>-</td>
+              <td>0.507</td>
+              <td>0.412</td>
+              <td>0.187</td>
+              <td>0.98%</td>
+              <td>0.853</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">deepseek-coder-33b-instruct</td>
+              <td>33B</td>
+              <td>0.486</td>
+              <td>0.439</td>
+              <td>0.209</td>
+              <td>0.47%</td>
+              <td>0.794</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2301.12597">
-                    <b>BLIP-2 FLAN-T5-XL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XL</b></td> -->
-              <td>31.0</td>
-              <td>43.0</td>
-              <td>25.6</td>
-              <td>25.1</td>
-              <td>31.8</td>
-              <td>48.0</td>
-              <td>27.8</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gemini-pro</td>
+              <td>-</td>
+              <td>0.385</td>
+              <td>0.326</td>
+              <td>0.126</td>
+              <td>5.32%</td>
+              <td>0.721</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">WizardCoder-33B-V1.1</td>
+              <td>33B</td>
+              <td>0.512</td>
+              <td>0.394</td>
+              <td>0.225</td>
+              <td>0.34%</td>
+              <td>0.721</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2305.06500">
-                    <b>InstructBLIP-T5-XL</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>InstructBLIP-T5-XL</b></td> -->
-              <td>30.6</td>
-              <td>43.3</td>
-              <td>25.2</td>
-              <td>25.2</td>
-              <td>29.3</td>
-              <td>45.8</td>
-              <td>28.6</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gemini-ultra</td>
+              <td>-</td>
+              <td>0.446</td>
+              <td>0.292</td>
+              <td>0.131</td>
+              <td>4.17%</td>
+              <td>0.706</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">Magicoder-S-DS-6.7B</td>
+              <td>6.7B</td>
+              <td>0.476</td>
+              <td>0.339</td>
+              <td>0.177</td>
+              <td>0.21%</td>
+              <td>0.588</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2311.03079">
-                    <b>CogVLM</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>CogVLM</b></td> -->
-              <td>30.1</td>
-              <td>38.0</td>
-              <td>25.6</td>
-              <td>25.1</td>
-              <td>31.2</td>
-              <td>41.5</td>
-              <td>28.9</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">glm-4</td>
+              <td>-</td>
+              <td>0.328</td>
+              <td>0.311</td>
+              <td>0.081</td>
+              <td>5.95%</td>
+              <td>0.559</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">Phind-CodeLlama-34B-v2</td>
+              <td>34B</td>
+              <td>0.465</td>
+              <td>0.270</td>
+              <td>0.086</td>
+              <td>0.35%</td>
+              <td>0.485</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-34b-hf</td>
+              <td>34B</td>
+              <td>0.366</td>
+              <td>0.229</td>
+              <td>0.102</td>
+              <td>0.30%</td>
+              <td>0.426</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">WizardCoder-15B-V1.0</td>
+              <td>15B</td>
+              <td>0.331</td>
+              <td>0.164</td>
+              <td>0.094</td>
+              <td>0.37%</td>
+              <td>0.382</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">Magicoder-S-CL-7B</td>
+              <td>7B</td>
+              <td>0.353</td>
+              <td>0.211</td>
+              <td>0.072</td>
+              <td>0.37%</td>
+              <td>0.368</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-34b-Instruct-hf</td>
+              <td>34B</td>
+              <td>0.330</td>
+              <td>0.222</td>
+              <td>0.024</td>
+              <td>0.67%</td>
+              <td>0.368</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-13b-Instruct-hf</td>
+              <td>13B</td>
+              <td>0.328</td>
+              <td>0.223</td>
+              <td>0.023</td>
+              <td>0.66%</td>
+              <td>0.338</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeFuse-CodeLlama-34B</td>
+              <td>34B</td>
+              <td>0.259</td>
+              <td>0.151</td>
+              <td>0.046</td>
+              <td>0.96%</td>
+              <td>0.279</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">CodeLlama-7b-Instruct-hf</td>
+              <td>7B</td>
+              <td>0.361</td>
+              <td>0.152</td>
+              <td>0.023</td>
+              <td>0.36%</td>
+              <td>0.250</td>
+              </tr>
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">octocoder</td>
+              <td class="s0">15.5B</td>
+              <td class="s7">0.2633</td>
+              <td class="s7">0.195</td>
+              <td class="s7">0.050</td>
+              <td class="s7">0.35%</td>
+              <td class="s7">0.235</td>
+              </tr>
+              <tr>
+              <td colspan="7">CoT</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2305.03726">
-                    <b>Otter</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Otter</b></td> -->
-              <td>29.1</td>
-              <td>37.4</td>
-              <td>24.0</td>
-              <td>24.1</td>
-              <td>29.6</td>
-              <td>35.9</td>
-              <td>30.2</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gpt-4-0613</td>
+              <td>-</td>
+              <td>0.439</td>
+              <td>0.414</td>
+              <td>0.174</td>
+              <td>1.45%</td>
+              <td>0.800</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2304.15010">
-                    <b>LLaMA-Adapter2-7B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>LLaMA-Adapter2-7B</b></td> -->
-              <td>27.7</td>
-              <td>35.2</td>
-              <td>25.4</td>
-              <td>25.6</td>
-              <td>30.0</td>
-              <td>29.1</td>
-              <td>25.7</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gpt-3.5-turbo-1106</td>
+              <td>-</td>
+              <td>0.440</td>
+              <td>0.321</td>
+              <td>0.142</td>
+              <td>0.69%</td>
+              <td>0.700</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://minigpt-4.github.io/">
-                    <b>MiniGPT4-Vicuna-13B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>MiniGPT4-Vicuna-13B</b></td> -->
-              <td>27.6</td>
-              <td>30.2</td>
-              <td>27.0</td>
-              <td>26.2</td>
-              <td>26.9</td>
-              <td>30.9</td>
-              <td>27.2</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">glm-4</td>
+              <td>-</td>
+              <td>0.201</td>
+              <td>0.260</td>
+              <td>0.072</td>
+              <td>5.28%</td>
+              <td>0.600</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://www.adept.ai/blog/fuyu-8b">
-                    <b>Adept Fuyu-8B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Fuyu-8B</b></td> -->
-                <td>27.4</td>
-                <td>29.9</td>
-                <td>27.0</td>
-                <td>25.6</td>
-                <td>27.0</td>
-                <td>32.5</td>
-                <td>26.4</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <td style="text-align: left;">gemini-ultra</td>
+              <td>-</td>
+              <td>0.364</td>
+              <td>0.217</td>
+              <td>0.062</td>
+              <td>3.21%</td>
+              <td>0.500</td>
+              </tr>
               <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2306.14824">
-                    <b>Kosmos2</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Kosmos2</b></td> -->
-              <td>26.6</td>
-              <td>28.8</td>
-              <td>23.7</td>
-              <td>26.6</td>
-              <td>27.2</td>
-              <td>26.3</td>
-              <td>26.8</td>
-            </tr>
-            <!-- <tr style="background-color: #f9f2f8;"> -->
-              <tr style="background-color: rgba(249, 242, 248, 1);">
-              <td style="text-align: left;">
-                <a href="https://arxiv.org/abs/2308.01390">
-                    <b>OpenFlamingo2-9B</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>OpenFlamingo2-9B</b></td> -->
-              <td>26.3</td>
-              <td>31.7</td>
-              <td>23.5</td>
-              <td>26.3</td>
-              <td>26.3</td>
-              <td>27.9</td>
-              <td>25.1</td>
-            </tr>
-            <tr style="background-color: #f4f9fe;">
-              <td style="color: #808080;text-align: left;">Frequent Choice</td>
-              <td style="color: #808080;">25.8</td>
-              <td style="color: #808080;">26.7</td>
-              <td style="color: #808080;">28.4</td>
-              <td style="color: #808080;">24.0</td>
-              <td style="color: #808080;">24.4</td>
-              <td style="color: #808080;">25.2</td>
-              <td style="color: #808080;">26.5</td>
-            </tr>
-            <tr style="background-color: #f4f9fe;">
-              <td style="color: #808080;text-align: left;">Random Choice</td>
-              <td style="color: #808080;">23.9</td>
-              <td style="color: #808080;">24.1</td>
-              <td style="color: #808080;">24.9</td>
-              <td style="color: #808080;">21.6</td>
-              <td style="color: #808080;">25.3</td>
-              <td style="color: #808080;">22.8</td>
-              <td style="color: #808080;">24.8</td>
-            </tr>
-            <!-- <tr>
-              <td colspan="8" style="font-size: 18px;"><b>Large Language Models (LLMs): Only Text as Input</b></td>
-            </tr>               -->
-            <!-- <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>Llama2 7B</b></td>
-              <td>28.7</td>
-              <td>30.7</td>
-              <td>27.2</td>
-              <td>26.7</td>
-              <td>27.7</td>
-              <td>32.6</td>
-              <td>29.8</td>
-            </tr>
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL</b></td>
-              <td><b>31.2</b></td>
-              <td>36.8</td>
-              <td><b>28.9</b></td>
-              <td>26.7</td>
-              <td>32.8</td>
-              <td><b>44.8</b></td>
-              <td><b>28.3</b></td>
-            </tr>
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL + OCR</b></td>
-              <td><b>31.9</b></td>
-              <td>36.2</td>
-              <td>28.8</td>
-              <td>26.2</td>
-              <td>32.6</td>
-              <td><b>50.5</b></td>
-              <td><b>29.7</b></td>
-            </tr>
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL + LLaVA Caption</b></td>
-              <td><b>31.9</b></td>
-              <td><b>38.4</b></td>
-              <td>27.8</td>
-              <td><b>27.0</b></td>
-              <td><b>33.2</b></td>
-              <td>49.9</td>
-              <td>28.7</td>
-            </tr>
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B</b></td>
-              <td>31.0</td>
-              <td>35.1</td>
-              <td><b>30.1</b></td>
-              <td>24.7</td>
-              <td>31.4</td>
-              <td>44.8</td>
-              <td>30.1</td>
-            </tr>
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B + OCR</b></td>
-              <td>31.9</td>
-              <td>37.1</td>
-              <td>28.6</td>
-              <td><b>26.5</b></td>
-              <td>32.0</td>
-              <td>49.3</td>
-              <td>30.0</td>
-            </tr>
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B + LLaVA Caption</b></td>
-              <td><b>32.7</b></td>
-              <td><b>42.0</b></td>
-              <td>26.8</td>
-              <td>26.2</td>
-              <td><b>33.4</b></td>
-              <td><b>49.4</b></td>
-              <td><b>31.4</b></td>
-            </tr> -->
-            <!-- <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>GPT-4 Text</b></td>
-              <td>33.8</td>
-              <td>32.9</td>
-              <td>28.5</td>
-              <td>30.6</td>
-              <td>41.3</td>
-              <td>53.0</td>
-              <td>28.4</td>
-            </tr> -->
+              <td style="text-align: left;">gemini-pro</td>
+              <td>-</td>
+              <td>0.280</td>
+              <td>0.211</td>
+              <td>0.047</td>
+              <td>4.51%</td>
+              <td>0.400</td>
+              </tr>
+
+
           </table>
           
-            <p> Overall results of different models on the MMMU test set. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
+          <p>
+            All results of models are generated by greedy decoding. 
+            Code Debug, Code Translate and Code Requirement Switch are evaluated with pass@1, while Code Polish is evaluated with Mean OptScore. 
+          </p>
         </div>
       </div>
     </div>
 <!-------------------------------------------------------------------- Image Type SECTION -------------------------------------------------------------------->
 <div class="columns is-centered m-6">
   <div class="column is-full has-text-centered content">
-    <h2 class="title is-3">Different Image Types</h2>
+    <h2 class="title is-3">Pass rate distribution</h2>
     <div class="content has-text-justified">
+      <img src="static/images/pass_rate_boxplot.jpg" alt="Pass rate boxplot" style="width: 100%;">
       <p>
-        We compare the performance of various models across top frequent image types.
-        Across all types, GPT-4V consistently outperforms the other models by a huge margin.
-        Open-source models demonstrate relatively strong performance in categories like Photos and Paintings, which are more frequently seen during training.
-        However, for less common image categories like Geometric shapes, Music sheets and Chemical structures, all models obtain very low scores (some are close to random guesses).
-        This indicates that the existing models are generalizing poorly towards these image types.
+        The pass rates exhibit significant variation across different problem types, as illustrated in Table~\ref{tab: judgement_type} and Figure~\ref{fig:pass_rate_boxplot}. 
+Within the PLUS dataset, Switch problems are identified as the most challenging, with a mere 9.27% pass rate. 
+Debug and Translate problems have pass rates approximately around 20%. 
+For Polish problems, even with the correct original code provided, only 33.70% of the solutions meet all testing criteria. Additionally, only a limited 14.71% of the dataset not only passes all tests but also demonstrates superior average runtime or memory efficiency relative to the original code. It is also significant to note that a notable fraction of solutions simply replicate the original code with no alterations.
       </p>
     </div>
-    <div class="model-labels-container">
-      <span class="model-label" style="background-color: rgba(196, 123, 160, 0.5);">Fuyu-8B</span>
-      <span class="model-label" style="background-color: rgba(245, 123, 113, 0.5);">Qwen-VL-7B</span>
-      <span class="model-label" style="background-color: rgba(255, 208, 80, 0.5);">LLaVA-1.5-13B</span>
-      <span class="model-label" style="background-color: rgba(110, 194, 134, 0.5);">InstructBLIP-T5-XXL</span>
-      <span class="model-label" style="background-color: rgba(255, 153, 78, 0.5);">BLIP-2 FLAN-T5-XXL</span>
-      <span class="model-label" style="background-color: rgba(117, 209, 215, 0.5);">GPT-4V</span>
-    </div>
-    <div class="content has-text-centered">
-      <div class="chart-grid">
-        <!-- Chart 1: Diagrams -->
-        <div class="chart-item">
-            <canvas id="chart_Diagrams"></canvas>
-            <p class="chart-label">Diagrams (3184)</p>
-        </div>
-
-        <!-- Chart 2: Tables -->
-        <div class="chart-item">
-            <canvas id="chart_Tables"></canvas>
-            <p class="chart-label">Tables (2267)</p>
-        </div>
-        <!-- Chart 3: Plots and Charts -->
-        <div class="chart-item">
-          <canvas id="chart_PlotsAndCharts"></canvas>
-          <p class="chart-label">Plots and Charts (840)</p>
-        </div>
-        <!-- Chart 4: Chemical Structures -->
-        <div class="chart-item">
-          <canvas id="chart_ChemicalStructures"></canvas>
-          <p class="chart-label">Chemical Structures (573)</p>
-        </div>
-        <!-- Chart 5: Photographs -->
-        <div class="chart-item">
-          <canvas id="chart_Photographs"></canvas>
-          <p class="chart-label">Photographs (770)</p>
-        </div>
-        <!-- Chart 6: Paintings -->
-        <div class="chart-item">
-          <canvas id="chart_Paintings"></canvas>
-          <p class="chart-label">Paintings (453)</p>
-        </div>
-        <!-- Chart 7: Geometric Shapes -->
-        <div class="chart-item">
-          <canvas id="chart_GeometricShapes"></canvas>
-          <p class="chart-label">Geometric Shapes (336)</p>
-        </div>
-        <!-- Chart 8: Sheet Music -->
-        <div class="chart-item">
-          <canvas id="chart_SheetMusic"></canvas>
-          <p class="chart-label">Sheet Music (335)</p>
-        </div>
-        <!-- Chart 9: Medical Images -->
-        <div class="chart-item">
-          <canvas id="chart_MedicalImages"></canvas>
-          <p class="chart-label">Medical Images (272)</p>
-        </div>
-        <!-- Chart 10: Pathological Images -->
-        <div class="chart-item">
-          <canvas id="chart_PathologicalImages"></canvas>
-          <p class="chart-label">Pathological Images (253)</p>
-        </div>
-        <!-- Chart 11: Microscopic Images -->
-        <div class="chart-item">
-          <canvas id="chart_MicroscopicImages"></canvas>
-          <p class="chart-label">Microscopic Images (226)</p>
-        </div>
-        <!-- Chart 12: MRI, CT scans, and X-rays -->
-        <div class="chart-item">
-          <canvas id="chart_MRIsCTScansXrays"></canvas>
-          <p class="chart-label">MRI, CT scans, and X-rays (198)</p>
-        </div>
-        <!-- Chart 13: Sketches and Drafts -->
-        <div class="chart-item">
-          <canvas id="chart_SketchesAndDrafts"></canvas>
-          <p class="chart-label">Sketches and Drafts (184)</p>
-        </div>
-        <!-- Chart 14: Maps -->
-        <div class="chart-item">
-          <canvas id="chart_Maps"></canvas>
-          <p class="chart-label">Maps (170)</p>
-        </div>
-        <!-- Chart 15: Technical Blueprints -->
-        <div class="chart-item">
-          <canvas id="chart_TechnicalBlueprints"></canvas>
-          <p class="chart-label">Technical Blueprints (162)</p>
-        </div>
-        <!-- Chart 16: Trees and Graphs -->
-        <div class="chart-item">
-          <canvas id="chart_TreesAndGraphs"></canvas>
-          <p class="chart-label">Trees and Graphs (146)</p>
-        </div>
-        <!-- Chart 17: Mathematical Notations -->
-        <div class="chart-item">
-          <canvas id="chart_MathematicalNotations"></canvas>
-          <p class="chart-label">Mathematical Notations (133)</p>
-        </div>
-        <!-- Chart 18: Comics and Cartoons -->
-        <div class="chart-item">
-          <canvas id="chart_ComicsAndCartoons"></canvas>
-          <p class="chart-label">Comics and Cartoons (131)</p>
-        </div>
-        <!-- Chart 19: Sculpture -->
-        <div class="chart-item">
-          <canvas id="chart_Sculpture"></canvas>
-          <p class="chart-label">Sculpture (117)</p>
-        </div>
-        <!-- Chart 20: Portraits -->
-        <div class="chart-item">
-          <canvas id="chart_Portraits"></canvas>
-          <p class="chart-label">Portraits (91)</p>
-        </div>
-        <!-- Chart 21: Screenshots -->
-        <div class="chart-item">
-          <canvas id="chart_Screenshots"></canvas>
-          <p class="chart-label">Screenshots (70)</p>
-        </div>
-        <!-- Chart 22: Other -->
-        <div class="chart-item">
-          <canvas id="chart_Other"></canvas>
-          <p class="chart-label">Other(60)</p>
-        </div>
-        <!-- Chart 23: Poster -->
-        <div class="chart-item">
-          <canvas id="chart_Poster"></canvas>
-          <p class="chart-label">Poster(57)</p>
-        </div>
-        <!-- Chart 24: Icons and Symbols -->
-        <div class="chart-item">
-          <canvas id="chart_IconsAndSymbols"></canvas>
-          <p class="chart-label">Icons and Symbols (42)</p>
-        </div>
-        <!-- Chart 25: Historical Timelines -->
-        <div class="chart-item">
-          <canvas id="chart_HistoricalTimelines"></canvas>
-          <p class="chart-label">Historical Timelines (30)</p>
-        </div>
-        <!-- Chart 26: 3D Renderings -->
-        <div class="chart-item">
-          <canvas id="chart_3DRenderings"></canvas>
-          <p class="chart-label">3D Renderings (21)</p>
-        </div>
-        <!-- Chart 27: DNA Sequences -->
-        <div class="chart-item">
-          <canvas id="chart_DNASequences"></canvas>
-          <p class="chart-label">DNA Sequences (20)</p>
-        </div>
-        <!-- Chart 28: Landscapes -->
-        <div class="chart-item">
-          <canvas id="chart_Landscapes"></canvas>
-          <p class="chart-label">Landscapes (16)</p>
-        </div>
-        <!-- Chart 29: Logos and Branding -->
-        <div class="chart-item">
-          <canvas id="chart_LogosAndBranding"></canvas>
-          <p class="chart-label">Logos and Branding(14)</p>
-        </div>
-        <!-- Chart 30: Advertisements -->
-        <div class="chart-item">
-          <canvas id="chart_Advertisements"></canvas>
-          <p class="chart-label">Advertisements (10)</p>
-        </div>
-      </div>
-      <p class="bottom-text"> Selected models' performance on 30 different image types. Note that a single image may have multiple image types.</p>
-    </div>
-
   </div>
 </div>
 <!-------------------------------------------------------------------- Difficulty Levels SECTION -------------------------------------------------------------------->
-<div class="columns is-centered m-6">
-  <div class="column is-full has-text-centered content">
-    <h2 class="title is-3">Different Difficulty Levels</h2>
-    <div class="content has-text-justified">
-      <p>
-        we compares the performance of selected models across three difficulty levels.
-        GPT-4V demonstrates a significantly higher proficiency, with a success rate of 76.1%, compared to opensource models in the “Easy” category.
-        When it comes to the “Medium” category, while the gap narrows, GPT-4V still leads at 55.6%.
-        The further diminishing performance gap in the “Hard” category across models indicates that as the complexity of tasks increases, the advantage of more advanced models like GPT-4V almost disappears.
-        This might reflect a current limitation in handling expert-level challenging queries even for the most advanced models.
-      </p>
-    </div>
-    <div class="content has-text-centered">
-      <canvas id="difficulty_level_chart"></canvas>
-      <p>Result decomposition across question difficulty levels.</p>
-  </div>
 
-  </div>
 </div>
-<!-------------------------------------------------------------------- Error Analysis SECTION -------------------------------------------------------------------->
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Error Analysis</h2>
-        <div class="content has-text-justified">
-          <p>
-            We delve into the analysis of errors by GPT-4V, a pivotal aspect for understanding its operational capabilities and limitations.
-            This analysis serves not only to identify the model's current shortcomings but also to guide future enhancements in its design and training.
-            We meticulously examine 150 randomly sampled error instances from GPT-4V's predictions.
-            These instances are analyzed by expert annotators who identify the root causes of mispredictions based on their knowledge and the golden explanations if available.
-            The distribution of these errors is illustrated in Figure, and a selection of 100 notable cases, along with detailed analyses, is included in the Appendix.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="static/images/error_distribution_1.Jpeg" alt="error distribution" width="25%">
-          <p> Error distribution over 150 annotated GPT-4V errors.</p>
-        </div>
-        <!-- <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error_distribution_1.Jpeg" alt="algebraic reasoning" width="45%"/>
-              <p> Error distribution over 150 annotated GPT-4V errors.</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error_case_main_text_1_1.Jpeg" alt="arithmetic reasoning" width="45%"/>
-              <p> A basic perceptual error, easy for humans but challenging for GPT-4V.</p>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
-
-<!-------------------------------------------------------------------- Error Example  -------------------------------------------------------------------->
-
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="examples">Error Examples</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/1.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/2.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/3.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/4.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/5.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/6.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/7.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/8.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/9.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/10.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/11.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/12.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/13.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <!-- <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/14.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div> -->
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/15.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/16.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/17.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/18.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/19.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/20.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/21.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/22.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/23.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/24.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/25.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/26.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/27.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/28.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/29.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/30.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/31.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/32.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/33.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/34.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/35.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/36.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/37.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/38.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/39.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/40.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/41.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/42.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/43.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/44.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/45.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/46.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/47.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/48.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/49.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/error/50.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-------------------------------------------------------------------- Correct Example -------------------------------------------------------------------->
-
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Correct Examples</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/1.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/2.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/3.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/4.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/5.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/6.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/7.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/8.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/9.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/10.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/11.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/12.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/13.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/14.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/15.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/16.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/17.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/18.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/19.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/20.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/21.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/22.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/23.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/24.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/25.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/26.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/27.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/28.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/29.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/30.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/31.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/32.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/33.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/34.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/35.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/36.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/37.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/correct/38.png" alt="grade-lv" width="60%"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
-
-
-  </div>
 </section>
 
 
@@ -2552,10 +1221,10 @@
 <script>
   function changeButtonText() {
     var button = document.getElementById('toggleButton');
-    if (button.innerHTML.includes("Validation Set Leaderboard")) {
-      button.innerHTML = "<b style='font-size: larger;'>Test Set Leaderboard</b> (Click to Switch)";
+    if (button.innerHTML.includes("CodeEditorBench_Plus")) {
+      button.innerHTML = "<b style='font-size: larger;'>CodeEditorBench_Primary</b> (Click to Switch)";
     } else {
-      button.innerHTML = "<b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)";
+      button.innerHTML = "<b style='font-size: larger;'>CodeEditorBench_Plus</b> (Click to Switch)";
     }
   }
   document.addEventListener('DOMContentLoaded', function() {
