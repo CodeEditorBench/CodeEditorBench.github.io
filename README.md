@@ -1,5 +1,5 @@
-# MMMU
-Homepage of MMMU, A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI. 
+# CodeEditorBench
+Homepage of CodeEditorBench, A Framework for Evaluating Code Editing Capability of Large Language Models. 
 
 This website is adapted from [Nerfies website](https://nerfies.github.io) and [MathVista](https://mathvista.github.io/).
 
